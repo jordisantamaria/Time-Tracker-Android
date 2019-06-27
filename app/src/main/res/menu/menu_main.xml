@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/action_create_task"
+        android:title="T+"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_addtask" />
+    <item android:id="@+id/action_create_project"
+        android:title="P+"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_addproject" />
+
+    <item android:id="@+id/action_create_report"
+        android:title="R+"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_addreport" />
+    <item android:id="@+id/action_settings"
+        android:title="Pause ALL activities"
+        android:orderInCategory="100"
+        />
+
+</menu>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TimeTracker</string>
+    <string name="wellcome">Welcome to TimeTracker</string>
+    <string name="createProject">Create new Project</string>
+    <string name="createTask">Create new Task</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Name: </string>
+    <string name="description">Description: </string>
+    <string name="initDate">Init Date: </string>
+    <string name="finalDate">Final Date: </string>
+    <string name="duration">Duration: </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="time">Time: </string>
+    <string name="clickAñadirFecha">Click to add date</string>
+    <string name="title_activity_create_report">Create Report</string>
+
+    <string name="abstractType">Summarized</string>
+    <string name="detailedType">Detailed</string>
+    <string name="type">Type</string>
+
+    <string name="document">Document</string>
+    <string name="web">Web</string>
+    <string name="format">Format</string>
+    <string name="title_activity_home">Projects</string>
+    <string name="status">Status</string>
+    <string name="subprojects">Subprojects</string>
+    <string name="tasks">Tasks</string>
+
+
+
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="timetracker.com.timetracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_apptt"
+        android:label="TimeTracker"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DialegActivitys.CreateProjectActivity"
+            android:label="@string/createProject"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name=".DialegActivitys.CreateTaskActivity"
+            android:label="@string/createTask"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name=".DialegActivitys.CreateReportActivity"
+            android:label="@string/title_activity_create_report"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="asdasd"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".MainTask"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".DialegActivitys.ActionsTaskActivity"
+            android:label="Task Actions"
+            android:theme="@android:style/Theme.Holo.Dialog"></activity>
+        <activity android:name=".DialegActivitys.ActionsProjectActivity"
+            android:label="Project Actions"
+            android:theme="@android:style/Theme.Holo.Dialog"></activity>
+    </application>
+
+</manifest>

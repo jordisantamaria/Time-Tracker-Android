@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight" >
+
+    <ImageView
+        android:id="@+id/iconProject"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/nameItemList"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/iconProject"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp" />
+
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/chronometer2"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/nameItemList"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        app:srcCompat="@mipmap/ic_play"
+        android:id="@+id/playbutton"
+        android:layout_alignTop="@+id/iconProject"
+        android:layout_toEndOf="@+id/chronometer2" />
+
+
+</RelativeLayout>

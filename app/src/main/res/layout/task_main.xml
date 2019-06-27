@@ -1,0 +1,118 @@
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/botonMenu"
+            android:background="@drawable/icon_menuprin" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tab_layout"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:id="@+id/title_mainTask"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="normal|bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:text=" Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description_task"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionText_Task"
+        android:layout_below="@+id/description_task"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionText_Task"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/Intervals_task"
+        android:textSize="18sp"
+        android:text=" Intervals"
+        android:textStyle="normal|bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp"
+        android:id="@+id/headerIntervalList"
+        android:layout_below="@+id/Intervals_task"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InitDate"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="FinalDate"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Duration"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/intervalList"
+        android:layout_below="@+id/headerIntervalList"
+        android:layout_height="500dp" />
+
+    <view
+        android:layout_width="200dp"
+        class="android.support.v4.view.ViewPager"
+        android:id="@+id/pager2"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_height="530dp" />
+
+</RelativeLayout>

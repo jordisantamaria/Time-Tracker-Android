@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="timetracker.com.timetracker.DialegActivitys.CreateTaskActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/description"
+        android:textSize="20dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initDate"
+
+            android:textSize="20dp"
+            android:layout_column="0"
+            android:layout_row="0"
+
+            />
+        <Button
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/initDate"
+            android:textSize="20dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:onClick="onInitDate"
+            android:text="@string/clickAñadirFecha"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finalDate"
+
+            android:textSize="20dp"
+            android:layout_column="0"
+            android:layout_row="1"
+
+            />
+        <Button
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/finalDate"
+            android:textSize="20dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:onClick="onFinalDate"
+            android:text="@string/clickAñadirFecha"
+            />
+
+
+    </GridLayout>
+
+    <Button
+        android:text="@string/create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createProject"
+        android:onClick="onCreateTask" />
+
+
+</LinearLayout>
+

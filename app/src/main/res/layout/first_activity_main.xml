@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/firstActivity_vertical_margin"
+    android:paddingLeft="@dimen/firstActivity_horizontal_margin"
+    android:paddingRight="@dimen/firstActivity_horizontal_margin"
+    android:paddingTop="@dimen/firstActivity_vertical_margin"
+
+    tools:context="timetracker.com.timetracker.FirstActivity"
+    android:orientation="vertical"
+    android:background="@android:color/holo_orange_dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="@string/wellcome"
+        android:id="@+id/title"
+        android:gravity="center"
+
+        android:textSize="40dp"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="@string/createProject"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/button"
+        android:onClick="onCreateNewProject"
+        android:background="@android:color/holo_orange_light" />
+    <Button
+        android:text="@string/createTask"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/button2"
+        android:layout_marginTop="10dp"
+        android:onClick="onCreateNewTask"
+        android:background="@android:color/holo_orange_light" />
+</LinearLayout>
